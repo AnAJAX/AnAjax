@@ -1,8 +1,0 @@
--------------------
-	Ejercicios
--------------------
-https://librosweb.es/libro/ajax/capitulo-9/google-maps.html
-
-https://www.digitallearning.es/blog/que-es-ajax/
-
-https://www.youtube.com/watch?v=0gGIoB8cIuQ
