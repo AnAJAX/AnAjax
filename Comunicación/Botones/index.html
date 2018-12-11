@@ -1,0 +1,42 @@
+<!--HTML-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Ejercicio comuninación</title>
+    <script src="ajax.js"></script>
+    <script type="text/javascript">
+
+        function enviar() {
+
+            var peticion = null;
+            peticion = ConstructorXMLHttpRequest();
+
+            if (peticion) {
+
+                peticion.open('get', "datos.php", false);
+                peticion.send(null);
+
+                peticion.onreadystatechange = function () {
+                    document.getElementById('resp').innerHTML = peticion.responseText;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+<h1>Ejemplo Comunicación</h1>
+
+<input type="button" onclick="enviar()" value="Btn1">
+<input type="button" onclick="enviar()" value="Btn2">
+<input type="button" onclick="enviar()" value="Btn3">
+<input type="button" onclick="enviar()" value="Btn4">
+
+<br><br>
+
+<div id="resp"></div>
+</body>
+</html>
