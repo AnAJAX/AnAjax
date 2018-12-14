@@ -1,0 +1,46 @@
+html {
+  align-content: center;
+  display: block;
+  color: #666;
+  font-size: 19px;
+}
+
+body {
+  text-align: center;
+  align-content: center;
+}
+
+#contains {
+  text-align: center;
+
+  margin: 2em;
+
+  display: grid;
+  grid-template-columns: 30% 70%;
+  #sectForm {
+    grid-column: 1;
+    margin: 2em;
+    #myFormDates {
+      padding: 1em;
+    }
+  }
+  #dataArea {
+    grid-column: 2;
+    border: 2px #437985 double;
+    margin: 2em 3em 2em 2em;
+    text-align: center;
+  }
+}
+
+input {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid #ccc;
+  background: #777d9d;
+  border-radius: 50px 50px;
+  &:hover {
+    background: #7bb2ad;
+  }
+}
